@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Due Date</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.2/angular-translate.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+	</head>
+	<body>
+		<div ng-app="app">
+			<div ng-controller="MainController">
+				<h1>
+				<span class="text-primary">Mike</span>
+				</h1>
+				<p class="text-primary">Calculate a challenge due date based off your timezone. Select the start date:</p>
+				<div class="wrapp">
+					<flex-calendar options="options" events="events"></flex-calendar>
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>Start Date</td>
+								<td id="startDate"></td>
+							</tr>
+							<th>
+								<td><strong>1 week challenge</strong></td>
+							</th>
+							<tr>
+								<td>End Date</td>
+								<td id="endBase1"></td>
+							</tr>
+							<th>
+								<td><strong>2 week challenge</strong></td>
+							</th>
+							<tr>
+								<td>End Date</td>
+								<td id="endBase2"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<script src="code.js"></script>
+	</body>
+</html>
